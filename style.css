@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --button-color: #3498db;
+  --button-hover: #2980b9;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --button-color: #e67e22;
+  --button-hover: #d35400;
+}
+
+.stopwatch-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-color);
+  width: 90%;
+  max-width: 400px;
+}
+
+.time-display {
+  font-size: 48px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.controls button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background-color: var(--button-hover);
+}
+
+.lap-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.lap-list li {
+  margin: 5px 0;
+  border-bottom: 1px dashed #ccc;
+  padding: 5px;
+}
